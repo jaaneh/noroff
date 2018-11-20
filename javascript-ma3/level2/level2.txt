@@ -1,0 +1,49 @@
+JavaScript MA03
+----------------
+Level 2
+
+1. In your own words, describe what JavaScript Code Style is.
+I would describe JavaScript Code Style as being the way you style your coding projects.
+
+The code style can also be a set of rules for you to follow. Typically you would want to follow the same style throughout your projects.
+Such rules can be using camelCase for variable names, how many spaces an indent will have, always ending a statement with semicolons.
+
+I usually place the opening bracket on the same line as the object name. while some people like to place opening brackets on the next line.
+I usually have spaces between a property and its value like `name: "value"`, while others write it without spacing like `name:"value`.
+
+
+2. What is a Regular Expression?
+A regular expression (regex/regexp) is a special text to describe a search pattern. You will typically use regex for finding, or finding and replacing, a piece of string. Regex is also used for input validation, such as on forms.
+
+
+3. What does the .random() method do?
+The .random() method will select a random number, it will always return a value lower than 1.
+You could for example use Math.floor() together with Math.random(), then multiply it by 50, to get a random number between 0 and 49.
+
+Math.floor(Math.random() * 50)
+// Returns random number between 0 and 49.
+
+
+4. What does the .sort() method do?
+The .sort() method will sort an array alphabetically.
+
+
+5. What does the .reverse() method do?
+The .reverse() method only works for arrays, and will reverse the content indexes of your array. Using .reverse() on ["A", "B", "C", "D"] will result in ["D", "C", "B", "A"].
+
+
+6. List two examples of bad JavaScript code.
+- The use of == where === should be used.
+- Not using 'var' statement to define variables.
+
+
+7. What data types can a JSON object contain?
+JSON objects can only contain null, number, string, array, boolean or object. It's also worth mentioning that a JSON object is written in a {"key": "value"} format, where the "key" will always have to be a string, while the "value" can be any from the listed data types.
+
+
+8. What is minifying JavaScript Code?
+Minifying JS code means removing every unnecessary character from the source code, such as comments and white spaces, without changing the code functionality. Minifying your code will help reduce load times. 
+
+
+9. What is a global variable?
+A global variable is a variable that has been declared outside any function. This gives the variable a global scope. This also means that all functions have access to this variable as it is visible throughout the program.
