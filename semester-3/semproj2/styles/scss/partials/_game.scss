@@ -1,0 +1,27 @@
+@import '../utilities/variables';
+
+canvas {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+hr {
+	margin-top: 0.5rem;
+}
+
+#player1-hr {
+	display: block;
+	width: 100%;
+	height: 20px;
+	border-radius: 0.25rem;
+}
+
+#player2-hr {
+	display: block;
+	width: 100%;
+	height: 20px;
+	border-radius: 0.25rem;
+}

@@ -1,0 +1,95 @@
+@import "../utilities/variables";
+
+%btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+%btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.packages {
+	&--heading {
+		font-size: 48px !important;
+	}
+
+	&--package {
+		margin-top: 25px;
+		border: 1px solid $button;
+		padding: 0 15px;
+
+		&:hover {
+			background: $package-hover;
+		}
+	}
+
+	&--packages-button {
+		@extend %btn;
+		@extend %btn-primary;
+		background: $button;
+		margin: 15px 0;
+		padding: 6px 12px;
+		text-align: center;
+		border-radius: 0;
+		border: 0;
+		font-weight: bold;
+		font-size: 16px;
+
+		&:hover {
+			background: #d67900;
+			border-color: #d67900;
+			text-decoration: none;
+		}
+
+		&:focus {
+			background: #d67900;
+			border-color: #d67900;
+			text-decoration: none;
+		}
+	}
+
+	&--padding-row {
+		margin-bottom: 50px;
+	}
+}
+
+@media #{$break-lg} {
+	.packages {
+		&--heading {
+			font-size: 40px !important;
+		}
+	}
+}
+@media #{$break-md} {
+	.packages {
+		&--heading {
+			font-size: 36px !important;
+		}
+	}
+}
+@media #{$break-sm} {
+	.packages {
+		&--heading {
+			font-size: 32px !important;
+		}
+	}
+}

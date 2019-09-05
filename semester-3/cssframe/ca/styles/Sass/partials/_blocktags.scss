@@ -1,0 +1,25 @@
+@import "mixins";
+@import "../utilities/variables";
+
+h1 {
+  font-size: toRem(36) !important;
+}
+
+a {
+  color: $font-color !important;
+
+  &:hover {
+    color: $font-hover !important;
+  }
+}
+
+body {
+  font-family: $font-family;
+  margin-bottom: 50px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,90 @@
+@import "../utilities/variables";
+
+.carousel-inner .item img {
+	width: 100%;
+	height: auto;
+}
+
+.carousel-indicators .active {
+	width: 30px;
+	height: 4px;
+	border-radius: 0;
+	margin: 0;
+	background: #fff;
+	border: 0;
+}
+
+.carousel-indicators li {
+	width: 30px;
+	height: 4px;
+	border-radius: 0;
+	margin: 0;
+	background: #ffffff70;
+	border: 0;
+}
+
+.home {
+	&--heading {
+		font-size: 48px !important;
+		font-weight: bold;
+	}
+
+	&--content {
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	&--content-button {
+		background: $button;
+		margin-top: 15px;
+		border-radius: 0;
+		border: 0;
+		padding: 6px 15px;
+		font-weight: bold;
+		font-size: 16px;
+
+		&:hover {
+			background: #d67900;
+			border-color: #d67900;
+		}
+
+		&:focus {
+			background: #d67900;
+			border-color: #d67900;
+		}
+	}
+}
+
+.btn-primary:active:hover {
+	background: #d67900;
+	border-color: #d67900;
+}
+
+@media #{$break-lg} {
+	.home {
+		&--heading {
+			font-size: 40px !important;
+		}
+	}
+}
+@media #{$break-md} {
+	.home {
+		&--heading {
+			font-size: 36px !important;
+		}
+	}
+}
+@media #{$break-sm} {
+	.home {
+		&--heading {
+			font-size: 28px !important;
+		}
+	}
+}
+@media only screen and (max-width: 400px) {
+	.home {
+		&--content-button {
+			width: 100%;
+		}
+	}
+}

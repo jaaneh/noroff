@@ -1,0 +1,19 @@
+//MODULE ASSIGNMENT 2 - LEVEL 1
+
+1. What is a function literal?
+
+2. What is the constructor?
+
+3. Create a simple function that logs the date.
+
+4. What does the return statement do?
+
+5. What will be written to the console from this function:
+		function myFunction(){
+			  return console.log('inside my function');
+			  console.log('My name is Andy');
+		}
+		myFunction();
+
+
+7. Briefly describe scope in JavaScript.

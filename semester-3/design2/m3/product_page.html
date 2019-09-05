@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/CSS/styles.css">
+  <title>Home Sweet Home - Product Page</title>
+</head>
+<body>
+  <!-- Nav -->
+  <div class="aboveNav"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-not-scrolled" id="navbar">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logo-80x54.png" class="d-inline-block align-top" alt="Home sweet home logo in a stylish handwritten font">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Product Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Furniture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bed & Bath</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Decor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sale</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </div>
+  
+  <!-- Content -->
+  <div class="container">
+    <div class="item">
+      <div class="row">
+
+        <div class="col-5">
+          <div class="item--image">
+            <img src="./images/product_image.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+
+        <div class="col-7">
+          <div class="item--description">
+            <h1>Silicone Serving Spoon</h1>
+            <p>This silicone serving spoon will make your kitchen bright and colorful, and will also make cooking and serving meals much easier. This spoon is made to last with highest quality and can be used safely up to 450°F. The spoon is 12.50” in diameter and weighs only 0.22lbs.</p>
+            <h2 class="item--price">$3.95</h2>
+            <button type="button" class="btn btn-outline-primary item--description__button">
+              <i class="fas fa-shopping-cart"></i> Add to cart
+            </button>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="item--more-images">
+            <i class="fas fa-arrow-circle-left item--more-images__left-button"></i>
+              <img src="https://via.placeholder.com/145x145.png?text=Placeholder" class="img-fluid item--more-images__image" alt="...">
+              <img src="https://via.placeholder.com/145x145.png?text=Placeholder" class="img-fluid item--more-images__image" alt="...">
+              <img src="https://via.placeholder.com/145x145.png?text=Placeholder" class="img-fluid item--more-images__image" alt="...">
+            <i class="fas fa-arrow-circle-right item--more-images__right-button"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- row -->
+
+    <!-- Product tabs -->
+    <div class="product-tabs">
+      <ul class="nav nav-tabs mt-5" id="myTab">
+        <li class="nav-item">
+          <a class="nav-link active" id="prod-details" data-toggle="tab" href="#prod-details-tab">Product Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="prod-reviews" data-toggle="tab" href="#prod-reviews-tab">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="prod-shipping" data-toggle="tab" href="#prod-shipping-tab">Shipping & Returns</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="tabContent">
+        <div class="tab-pane fade show active" id="prod-details-tab" role="tabpanel" aria-labelledby="prod-details">
+          This silicone serving spoon will make your kitchen bright and colorful, and will also make cooking and serving meals much easier. This spoon is made to last with highest quality and can be used safely up to 450°F. The spoon is 12.50” in diameter and weighs only 0.22lbs.
+        </div>
+        <div class="tab-pane fade" id="prod-reviews-tab" role="tabpanel" aria-labelledby="prod-reviews">
+          <p class="tab-content--reviews">
+            This product is amazing! The best serving spoon I've bought ever, and it's all silicone!! I recommend you buy this if you're looking for a new serving spoon! ++
+            <span class="tab-content--reviews__star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+          </p>
+          <p class="tab-content--reviews">
+            After having to return my first purchase becuase the serving spoon wasn't the one I ordered, I received the correct one finally. Shipping is slow, and return took a while. Otherwise a very great product.
+            <span class="tab-content--reviews__star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </p>
+          <p class="tab-content--reviews">
+            Thanks so much! Great product. The description says it can be used safely up to 450 fahrenheit, but I've used it at 525 without any issues whatsoever. Subtracted 1 star becuase of slow item shipping and slow customer support, otherwise great!
+            <span class="tab-content--reviews__star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </p>
+        </div>
+        <div class="tab-pane fade" id="prod-shipping-tab" role="tabpanel" aria-labelledby="prod-shipping">
+          We only accept returns of unopened and unused items. Packaging and shipping costs will be covered us once the returned item has been received by us. Please write to our support team if you have any issues with any of our products.
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- container -->
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="./images/logo-80x54.png" class="mb-2" alt="Home sweet home logo in a stylish handwritten font">
+          <small class="d-block mb-3 text-muted">© 2017-2019</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Pages</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="index.html">Home</a></li>
+            <li><a class="text-body" href="#">Product Page</a></li>
+            <li><a class="text-muted" href="#">Outdoor</a></li>
+            <li><a class="text-muted" href="#">Furniture</a></li>
+            <li><a class="text-muted" href="#">Bed & Bath</a></li>
+            <li><a class="text-muted" href="#">Decor</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-text">Images from <a href="https://www.pexels.com">pexels.com</a></p>
+
+      <div class="footer-icons">
+        <div class="col-12 mt-3">
+          <a href="#" class="footer-icons--link">
+            <img src="images/w-icon.png" class="footer-icons--link__icon img-fluid">
+          </a>
+          <a href="#" class="footer-icons--link ml-1">
+            <img src="images/x-icon.png" class="footer-icons--link__icon img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Script files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/product-page.js"></script>
+</body>
+</html>

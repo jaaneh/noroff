@@ -1,0 +1,66 @@
+@import "../utilities/variables";
+
+.card {
+	background: transparent;
+	border: none;
+	.card-body {
+		padding: 15px 5px;
+		.card-title {
+			font-size: 36px;
+			color: $secondary-color;
+			@media screen and (max-width: $break-lg) {
+				font-size: 26px;
+			}
+			&--button {
+				float: right;
+				font-weight: 500;
+				color: $secondary-color;
+				border-color: $secondary-color;
+				@media screen and (max-width: $break-lg) {
+					padding: .25rem .5rem;
+				}
+				@media screen and (max-width: $break-md) {
+					display: block;
+					float: left;
+					margin-top: 5px;
+					padding: .25rem .45rem;
+					font-size: 1rem;
+				}
+				@media screen and (max-width: $break-sm) {
+					float: right;
+					margin-top: 0;
+					padding: .25rem .45rem;
+					font-size: 1rem;
+				}
+				&:hover {
+					color: $white;
+					background-color: $secondary-color;
+				}
+				&:active {
+					color: $white !important;
+					background-color: $secondary-color !important;
+					border-color: $secondary-color !important;
+					&:focus {
+						box-shadow: 0 0 0 2px $secondary-color-opc !important;
+					}
+				}
+				&:focus {
+					box-shadow: 0 0 0 2px $secondary-color-opc;
+				}
+			}
+		}
+		.card-text {
+			@media screen and (max-width: $break-md) {
+				font-size: 14px;
+				padding-top: 35px;
+			}
+			@media screen and (max-width: $break-sm) {
+				font-size: 16px;
+				padding-top: 5px;
+			}
+		}
+	}
+}
+.singleCardTop {
+	margin-bottom: 50px;
+}

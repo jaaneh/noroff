@@ -1,0 +1,19 @@
+@import 'partials/navbar';
+@import 'partials/character';
+@import 'partials/game';
+@import 'partials/modal';
+@import 'partials/winner';
+
+body {
+	margin: 0;
+	background-image: url('../../images/site/background_faded.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.hide {
+	display: none;
+}

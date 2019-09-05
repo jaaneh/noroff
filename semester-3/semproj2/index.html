@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Just Snakes is a playable in-browser board game that is played with characters from Game of Thrones." />
+		<meta name="keywords" content="justsnakes, just snakes, got, game of thrones, board game, got board game" />
+		<meta property="og:site_name" content="Just Snakes" />
+		<meta property="og:title" content="Just Snakes – A Game of Thrones Board Game." />
+		<meta property="og:url" content="https://noroff.jaany.xyz/semproj2/index.html" />
+		<meta property="og:type" content="website" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#141c26">
+		<meta name="theme-color" content="#141c26">
+		<title>Character Select - Just Snakes - A Game of Thrones Board Game</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/style.css" />
+	</head>
+
+	<body onload="fetchChars()">
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark navStyle">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/site/logo_wht.png" height="55" class="d-inline-block align-top" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarToggle">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Play Game <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" onclick="openHtp()" data-toggle="modal" data-target="#htpModal">How to Play</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Game div -->
+		<div class="container">
+			<div class="card-deck" id="charPick"></div>
+		</div>
+
+		<!-- How to Play modal-->
+		<div class="modal fade" id="htpModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+							<h5 class="modal-title">How to play Just Snakes</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="modal-body--title">Basic Information</p>
+						<p class="modal-body--body">
+							As this game is meant for 2 players, you'll start with selecting your characters. When the 2 players have been selected, you'll be promted to go to the game.</br></br>
+							The board has a total of 30 tiles, first to reach tile 30, wins!
+							<span class="d-block mt-1">
+								<img src="images/board/icon.png" width="50" alt="...">
+								<img src="images/board/final.png" width="50" alt="...">
+							</span>
+						</p>
+						<p class="modal-body--title">Trap Tiles</p>
+						<p class="modal-body--body">
+							The board consists of 30 tiles total, but be careful! If you happen to get unlucky and land on any of the 5 trap tiles, you will be moved back 2-4 tiles depending on the trap.
+							<img src="images/board/trap.png" class="d-block mt-1" width="50" alt="...">
+						</p>
+						<p class="modal-body--title">Throwing Sixes</p>
+						<p class="modal-body--body" style="margin-bottom: 10px">
+							When a player throws a six on the dice, that player will get an extra throw.
+							If a player throws 2 sixes, they will move 12 tiles (if they didn't hit a trap), and the next player will get their turn.</br></br>
+
+							With some luck, JustSnakes games can be over very quickly, so you better hope you roll some sixes.</br></br>
+
+							A player can maximum have 2 throws, then the game will allow the next player to have their turn.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Players selected modal -->
+		<div class="modal fade" id="selectedModal" role="dialog" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content" id="goToGameModal">
+					<button type="button" onclick="location.href='game.html'" class="btn btn-default modal-content--btn-game" data-dismiss="modal">Go to Game!</button>
+					<button type="button" onclick="location.href='index.html'" class="btn btn-default modal-content--btn-back" data-dismiss="modal">Go back</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

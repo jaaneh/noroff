@@ -1,0 +1,161 @@
+.nav-scrolled {
+  position: sticky;
+  height: 60px;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 991px) {
+  .nav-scrolled {
+    height: auto;
+    min-height: 60px;
+  }
+}
+
+.nav-not-scrolled {
+  height: 80px;
+}
+@media screen and (max-width: 991px) {
+  .nav-not-scrolled {
+    height: auto;
+    min-height: 80px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.65);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  z-index: 1;
+  background: #fff !important;
+}
+.navbar .navbar-brand {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  font-size: 1.5rem;
+}
+.navbar .nav-link {
+  text-decoration: none;
+}
+.navbar .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2e2b70;
+  transition: width 0.3s;
+  transform: translateY(-50%);
+  bottom: -15px;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.aboveNav {
+  height: 5px;
+  background: #2e2b70;
+}
+
+.card {
+  background: transparent;
+  border: none;
+}
+.card .card-body {
+  padding: 15px 5px;
+}
+.card .card-body .card-title {
+  font-size: 36px;
+  color: #2e2b70;
+}
+@media screen and (max-width: 991px) {
+  .card .card-body .card-title {
+    font-size: 26px;
+  }
+}
+.card .card-body .card-title--button {
+  float: right;
+  font-weight: 500;
+  color: #2e2b70;
+  border-color: #2e2b70;
+}
+@media screen and (max-width: 991px) {
+  .card .card-body .card-title--button {
+    padding: 0.25rem 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card .card-body .card-title--button {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    padding: 0.25rem 0.45rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .card .card-body .card-title--button {
+    float: right;
+    margin-top: 0;
+    padding: 0.25rem 0.45rem;
+    font-size: 1rem;
+  }
+}
+.card .card-body .card-title--button:hover {
+  color: #fff;
+  background-color: #2e2b70;
+}
+.card .card-body .card-title--button:active {
+  color: #fff !important;
+  background-color: #2e2b70 !important;
+  border-color: #2e2b70 !important;
+}
+.card .card-body .card-title--button:active:focus {
+  box-shadow: 0 0 0 2px #2e2b7080 !important;
+}
+.card .card-body .card-title--button:focus {
+  box-shadow: 0 0 0 2px #2e2b7080;
+}
+@media screen and (max-width: 767px) {
+  .card .card-body .card-text {
+    font-size: 14px;
+    padding-top: 35px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .card .card-body .card-text {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+}
+
+.singleCardTop {
+  margin-bottom: 50px;
+}
+
+footer {
+  background: #fff;
+  padding: 40px 40px;
+  margin-top: 60px;
+}
+footer .footer-text {
+  margin: 25px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+footer .footer-text a {
+  color: inherit;
+}
+
+body {
+  background: url("../../images/circles-light.png");
+  background-repeat: repeat;
+}
+
+/*# sourceMappingURL=styles.css.map */

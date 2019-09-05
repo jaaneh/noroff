@@ -1,0 +1,10 @@
+{
+  "name": "Yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jan Henning",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

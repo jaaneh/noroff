@@ -1,0 +1,493 @@
+/* Shadow Variables */
+/* Color Theme Variables */
+/* Player colors */
+@font-face {
+  font-family: SortsMillGoudy-Regular;
+  src: url("../../fonts/SortsMillGoudy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SortsMillGoudy-Italic;
+  src: url("../../fonts/SortsMillGoudy-Italic.ttf");
+  font-weight: 400;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navStyle {
+  min-height: 70px;
+  background-color: #141c26 !important;
+  font-family: SortsMillGoudy-Regular;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nav-link {
+  font-size: 18px;
+  margin: 5px 5px 0 0;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+/* Shadow Variables */
+/* Color Theme Variables */
+/* Player colors */
+@font-face {
+  font-family: SortsMillGoudy-Regular;
+  src: url("../../fonts/SortsMillGoudy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SortsMillGoudy-Italic;
+  src: url("../../fonts/SortsMillGoudy-Italic.ttf");
+  font-weight: 400;
+}
+
+.char-selected {
+  opacity: 0.7;
+}
+
+.card {
+  background-color: #141c2680;
+}
+
+#charPick {
+  padding: 25px;
+  background-color: #88888830;
+}
+
+.read-selected {
+  background-color: #141c26 !important;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.character {
+  padding: 0;
+}
+
+.character-card {
+  border: none;
+  margin: 0 10px 20px !important;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.character-card--game {
+  margin: 15px 0 0;
+}
+
+.character-card > [id^='selected-'] {
+  background-color: #555;
+  border-color: #777;
+  margin: 0;
+  padding: 8px 0;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.character-card:hover {
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.character-card--game-image {
+  max-width: 100%;
+}
+
+.character-card--home-image {
+  max-width: 250px;
+}
+
+.character-card--header {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0 5px;
+  margin-bottom: -5px;
+  background: #141c2680;
+  color: #fff;
+  font-weight: bold;
+  font-family: SortsMillGoudy-Regular;
+}
+
+.character-card--header-game {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0 5px;
+  background: #141c2680;
+  color: #fff;
+  font-family: SortsMillGoudy-Regular;
+}
+
+.character-card--body {
+  padding: 0;
+}
+
+.character-card--body__more-title {
+  font-weight: bold;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.character-card--body__more-text {
+  display: block;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.character-card--body__more {
+  background-color: #141c2680;
+  color: #fff;
+}
+
+.character-card--body__title {
+  color: #000;
+}
+
+.character-card--body__read-button {
+  background-color: #141c2680;
+  border-color: #444;
+  color: #fff;
+  padding: 2px 0;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+
+.character-card--body__read-button:hover {
+  background-color: #141c26;
+  border-color: #1e3340;
+  color: #fff;
+}
+
+.character-card--body__read-button:active {
+  background-color: #28303c !important;
+  border-color: #1e3340 !important;
+}
+
+.character-card--body__read-button:active:focus {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.character-card--body__read-button:focus {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.character-card--body__read-button:focus:active {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.character-card--body__choose-button {
+  background-color: #141c26;
+  border-color: #141c2680;
+  color: #fff;
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+.character-card--body__choose-button:hover {
+  background-color: #141c26;
+  border-color: #141c2680;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.character-card--body__choose-button:active {
+  background-color: #28303c !important;
+  border-color: #444 !important;
+}
+
+.character-card--body__choose-button:active:focus {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.character-card--body__choose-button:focus {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.character-card--body__choose-button:focus:active {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Shadow Variables */
+/* Color Theme Variables */
+/* Player colors */
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+hr {
+  margin-top: 0.5rem;
+}
+
+#player1-hr {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 0.25rem;
+}
+
+#player2-hr {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 0.25rem;
+}
+
+/* Shadow Variables */
+/* Color Theme Variables */
+/* Player colors */
+@font-face {
+  font-family: SortsMillGoudy-Regular;
+  src: url("../../fonts/SortsMillGoudy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SortsMillGoudy-Italic;
+  src: url("../../fonts/SortsMillGoudy-Italic.ttf");
+  font-weight: 400;
+}
+
+#goToGameModal {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.modal-content--btn-game {
+  border-radius: 0;
+  padding: 35px 20px;
+  color: #fff;
+  background: #141c26;
+  border: none;
+  font-size: 18px;
+}
+
+.modal-content--btn-game:hover {
+  background: #28303c;
+  color: #fff;
+}
+
+.modal-content--btn-game:active {
+  background: #28303c;
+  color: #fff;
+}
+
+.modal-content--btn-game:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-content--btn-back {
+  border-radius: 0;
+  padding: 5px 10px;
+  color: #000;
+  background: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+.modal-content .modal-title {
+  font-family: SortsMillGoudy-Regular;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: -5px;
+}
+
+.modal-content .modal-body--title {
+  font-family: SortsMillGoudy-Italic;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.modal-content .modal-body--body {
+  font-family: SortsMillGoudy-Regular;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+/* Shadow Variables */
+/* Color Theme Variables */
+/* Player colors */
+@font-face {
+  font-family: SortsMillGoudy-Regular;
+  src: url("../../fonts/SortsMillGoudy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SortsMillGoudy-Italic;
+  src: url("../../fonts/SortsMillGoudy-Italic.ttf");
+  font-weight: 400;
+}
+
+.body-animation {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #141c26), color-stop(50%, #161e29));
+  background-image: linear-gradient(90deg, #141c26 50%, #161e29 50%);
+  background-color: #272829;
+  background-size: 60px 100%;
+  -webkit-animation: sliding 60s linear infinite;
+          animation: sliding 60s linear infinite;
+}
+
+@-webkit-keyframes sliding {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes sliding {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#winnerWrapper {
+  color: #fff;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#winnerWrapper .winner > h2 {
+  font-size: 36px;
+}
+
+#winnerWrapper .winner > p {
+  color: #eee;
+  font-size: 16px;
+}
+
+#winnerWrapper .winner--image {
+  max-width: 250px;
+}
+
+#winnerWrapper .winner--name {
+  font-size: 36px;
+}
+
+#winnerWrapper .winner--btn {
+  border-radius: 4px;
+  padding: 10px 25px;
+  color: #000;
+  font-weight: bold;
+  background: #fff;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#winnerWrapper .winner--btn:hover {
+  background: #eee;
+  color: #000;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#winnerWrapper .winner--btn:active {
+  background: #eee;
+  color: #000;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#winnerWrapper .winner--btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#winnerWrapper .no-winner {
+  margin-top: 50px;
+}
+
+#winnerWrapper .no-winner > h2 {
+  font-size: 36px;
+}
+
+#winnerWrapper .no-winner > p {
+  color: #eee;
+  font-size: 16px;
+}
+
+#winnerWrapper .no-winner--btn {
+  border-radius: 4px;
+  padding: 10px 25px;
+  color: #000;
+  font-weight: bold;
+  background: #fff;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#winnerWrapper .no-winner--btn:hover {
+  background: #eee;
+  color: #000;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#winnerWrapper .no-winner--btn:active {
+  background: #eee;
+  color: #000;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#winnerWrapper .no-winner--btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body {
+  margin: 0;
+  background-image: url("../../images/site/background_faded.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

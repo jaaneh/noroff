@@ -1,0 +1,70 @@
+@import "../utilities/variables";
+@import "mixins";
+
+.nav-active {
+	font-weight: bold;
+}
+
+.navbar {
+	background-color: $header-bg;
+	border: 0;
+	border-radius: 0px;
+	min-height: 60px;
+	line-height: 30px;
+	margin-bottom: 0;
+
+	.navbar-brand {
+		color: $font-color;
+		font-size: toRem(48);
+		line-height: 30px;
+
+		&:hover {
+			color: $font-hover;
+		}
+	}
+
+	ul li a {
+		line-height: 30px;
+	}
+}
+
+.navbar-default .navbar-collapse {
+	border-color: $header-bg;
+	box-shadow: none;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #526ab7;
+}
+.navbar-default .navbar-toggle {
+	border-color: #3c54a0;
+}
+.navbar-toggle {
+	margin-top: 12px;
+}
+
+@media #{$break-lg} {
+	.navbar .navbar-brand {
+		font-size: toRem(42);
+	}
+}
+@media #{$break-md} {
+	.navbar .navbar-brand {
+		font-size: toRem(36);
+	}
+}
+@media #{$break-sm} {
+	.navbar .navbar-brand {
+		font-size: toRem(32);
+	}
+}
+@media only screen and (max-width: 360px) {
+	.navbar .navbar-brand {
+		font-size: toRem(26);
+	}
+}
+@media only screen and (max-width: 270px) {
+	.navbar .navbar-brand {
+		font-size: toRem(20);
+	}
+}

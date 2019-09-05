@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Noroff HTML & CSS Course. Course Assignment 1">
+  <meta name="keywords" content="Noroff,HTML,CSS,Learning,Course">
+  <meta name="author" content="Jan Henning E. Teige">
+
+  <!-- Rresponsive meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>re-cycle - Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles/css/styles.min.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark sticky-top navbar-expand-lg">
+    <a class="navbar-brand" href="./index.html">re-cycle</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item" style="padding-left: 15px">
+           <a class="nav-link" href="./index.html">Home</a>
+         </li>
+         <li class="nav-item" style="padding-left: 15px">
+           <a class="nav-link" href="./tours.html">Tours</a>
+         </li>
+         <li class="nav-item" style="padding-left: 15px">
+           <a class="nav-link" href="./aboutus.html">About Us</a>
+         </li>
+         <li class="nav-item active" style="padding-left: 15px">
+           <a class="nav-link" href="./contactus.html">Contact Us</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+
+   <!-- Contact Us form -->
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="title col-12 col-lg-8">
+         <h1 class="display-4 text-center">Contact us.</h1>
+         <p>Interested in one of our tours? Have any questions? Get in touch by calling us at 888-888-8888, alternatively use the form below. You'll hear back from us within 1 business day.</p>
+         <div class="contactUsSpacing"></div>
+       </div>
+     </div>
+   </div>
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="media-container-column col-lg-8" data-form-type="formoid">
+
+         <form>
+           <div class="row row-sm-offset">
+             <div class="col-md-6 multi-horizontal" data-for="firstname">
+               <div class="form-group">
+                 <label class="form-control-label mbr-fonts-style display-7" for="name-form1-4">First Name</label>
+                 <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-4">
+               </div>
+             </div>
+             <div class="col-md-6 multi-horizontal" data-for="lastname">
+               <div class="form-group">
+                 <label class="form-control-label mbr-fonts-style display-7" for="name-form1-4">Last Name</label>
+                 <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-4">
+               </div>
+             </div>
+             <div class="col-md-12 multi-horizontal" data-for="email">
+               <div class="form-group">
+                 <label class="form-control-label mbr-fonts-style display-7" for="email-form1-4">Email</label>
+                 <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-4">
+               </div>
+             </div>
+             <div class="col-md-12 multi-horizontal" data-for="phone">
+               <div class="form-group">
+                 <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-4">Phone</label>
+                 <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form1-4">
+               </div>
+             </div>
+           </div>
+
+           <div class="form-group" data-for="message">
+             <label class="form-control-label mbr-fonts-style display-7" for="message-form1-4">Message</label>
+             <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-4"></textarea>
+           </div>
+
+           <span class="input-group-btn"><button href="" type="submit" class="btn btn-form btn-black-outline display-4">CONTACT</button></span>
+         </form>
+       </div>
+     </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="footer">
+     <div class="container">
+       <span class="text-muted">&copy; Copyright 2018 - re-cycle. All Rights Reserved</span>
+     </div>
+   </footer>
+
+
+
+</body
+</html>

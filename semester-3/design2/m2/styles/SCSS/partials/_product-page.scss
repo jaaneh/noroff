@@ -1,0 +1,173 @@
+@import "../utilities/variables";
+
+.item {
+	&--more-images {
+		margin-top: 5px;
+		max-width: 445px;
+		&__left-button {
+			position: absolute;
+			font-size: 20px;
+			top: 67.5px;
+			left: 25px;
+			opacity: 0; // Using opacity instead of display:none so I can add transition animation to the hover state.
+			transition: all 0.15s;
+			-webkit-transition: all 0.15s;
+		}
+		&__right-button {
+			position: absolute;
+			font-size: 20px;
+			top: 67.5px;
+			right: 25px;
+			opacity: 0; // Using opacity instead of display:none so I can add transition animation to the hover state.
+			transition: all 0.15s;
+			-webkit-transition: all 0.15s;
+		}
+		&:hover &__left-button,
+		&:hover &__right-button {
+			opacity: 1;
+			@media screen and (max-width: $break-lg) {
+				opacity: 0; // Remove hover arrow buttons on smaller screen sizes.
+			}
+		}
+		&__image {
+			@media screen and (max-width: 1199px) {
+				width: 120px;
+			}
+			@media screen and (max-width: $break-lg) {
+				width: 87px;
+			}
+			@media screen and (max-width: $break-md) {
+				display: none;
+			}
+		}
+	}
+	&--description {
+		h1 {
+			font-weight: 400;
+			color: $secondary-color;
+			@media screen and (max-width: $break-lg) {
+				font-size: 34px;
+			}
+			@media screen and (max-width: $break-md) {
+				font-size: 30px;
+			}
+		}
+		p {
+			@media screen and (max-width: $break-lg) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: $break-md) {
+				font-size: 13px;
+			}
+		}
+		&__button {
+			position: absolute;
+			bottom: 0;
+			left: 10px;
+			font-weight: 500;
+			padding: 10px 15px;
+			font-size: 18px;
+			color: $secondary-color;
+			border-color: $secondary-color;
+			@media screen and (max-width: $break-lg) {
+				padding: 4px 8px;
+			}
+			@media screen and (max-width: $break-md) {
+				display: block;
+				position: relative;
+				float: left;
+				margin-top: 5px;
+				margin-left: -10px;
+				padding: 4px 8px;
+				font-size: 16px;
+			}
+			@media screen and (max-width: $break-sm) {
+				float: left;
+				margin-top: 0;
+				padding: 4px 8px;
+				font-size: 1rem;
+			}
+			&:hover {
+				color: $white;
+				background-color: $secondary-color;
+			}
+			&:active {
+				color: $white !important;
+				background-color: $secondary-color !important;
+				border-color: $secondary-color !important;
+				&:focus {
+					box-shadow: 0 0 0 2px $secondary-color-opc !important;
+				}
+			}
+			&:focus {
+				box-shadow: 0 0 0 2px $secondary-color-opc;
+			}
+		}
+	}
+	&--price {
+		position: absolute;
+		color: $secondary-color;
+		font-weight: 400;
+		bottom: 50px;
+		left: 10px;
+		@media screen and (max-width: $break-lg) {
+			font-size: 32px;
+			bottom: 35px;
+		}
+		@media screen and (max-width: $break-md) {
+			position: relative;
+			font-size: 28px;
+			bottom: -8px;
+			left: 0;
+		}
+		@media screen and (max-width: $break-sm) {
+			position: relative;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}
+
+.product-tabs {
+	a {
+		color: $secondary-color;
+	}
+	.nav-tabs {
+		.nav-link {
+			@media screen and (max-width: $break-lg) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: $break-sm) {
+				padding: 4px 8px;
+			}
+		}
+		.nav-link.active {
+			color: $white;
+			background-color: $secondary-color;
+			border-color: $secondary-color-opc;
+		}
+	}
+	.tab-content {
+		&--reviews {
+			font-size: 16px;
+			padding-bottom: 8px;
+			margin-block-end: 8px;
+			border-bottom: 1px solid $border;
+			&__star {
+				display: block;
+				padding-top: 5px;
+				font-size: 10px;
+				color: $secondary-color;
+			}
+		}
+		.tab-pane {
+			margin-top: 5px;
+			@media screen and (max-width: $break-lg) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: $break-md) {
+				font-size: 13px;
+			}
+		}
+	}
+}
