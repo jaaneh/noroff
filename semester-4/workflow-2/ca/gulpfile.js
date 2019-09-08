@@ -31,6 +31,7 @@ gulp.task('minify-img', () => {
 
 gulp.task('serve', ['less', 'minify-img'], () => {
 	browserSync.init({
+		watch: true,
 		startPath: './dist',
 		server: {
 			baseDir: './'
@@ -38,8 +39,6 @@ gulp.task('serve', ['less', 'minify-img'], () => {
 	});
 
 	gulp.watch('./styles/less/*.less', ['less']).on('change', reload);
-	gulp.watch('./dist/*.html').on('change', reload);
-	gulp.watch('*').on('change', reload);
 });
 
 gulp.task('default', ['serve']);
