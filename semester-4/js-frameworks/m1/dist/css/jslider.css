@@ -1,0 +1,106 @@
+body,
+html {
+  margin: 0;
+}
+
+.container, .arrow {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container, .arrow {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .arrow {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .arrow {
+    width: 1170px;
+  }
+}
+
+.container .slider-wrapper, .arrow .slider-wrapper {
+  position: relative;
+}
+
+.container .slider-wrapper #slider .slider-image, .arrow .slider-wrapper #slider .slider-image {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  display: none;
+}
+
+.container .slider-wrapper #slider .slider-image.active, .arrow .slider-wrapper #slider .slider-image.active {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  height: 390px;
+  line-height: 390px;
+  text-align: center;
+  z-index: 2;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.1s ease;
+}
+
+@media (max-width: 1200px) {
+  .arrow {
+    height: 323px;
+    line-height: 323px;
+  }
+}
+
+@media (max-width: 992px) {
+  .arrow {
+    height: 250px;
+    line-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    height: 250px;
+    line-height: 250px;
+    width: 100%;
+  }
+}
+
+.arrow:hover {
+  opacity: 0.8;
+}
+
+.arrow #prev-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+
+.arrow #prev-arrow:hover {
+  cursor: pointer;
+}
+
+.arrow #next-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.arrow #next-arrow:hover {
+  cursor: pointer;
+}
